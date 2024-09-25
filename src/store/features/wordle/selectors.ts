@@ -5,6 +5,7 @@ export const getAllAvailableWordsSelector = (root: RootState) => root.wordle.all
 export const getFinalWordSelector = (root: RootState) => root.wordle.word;
 export const getGuessesSelector = (root: RootState) => root.wordle.guesses;
 export const getCurrentGuessIndexSelector = (root: RootState) => root.wordle.currentGuessIndex;
+export const getWarningSelector = (root: RootState) => root.wordle.warning;
 
 export const getCurrentUserWordSelector = createSelector(
   getGuessesSelector,

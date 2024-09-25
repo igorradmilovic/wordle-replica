@@ -7,7 +7,7 @@ export const Button = ({
 }: PropsWithChildren<ComponentPropsWithRef<"button">>) => {
   return (
     <button
-      className={`px-6 py-[8px] rounded-md cursor-pointer hover:brightness-90 active:scale-95 uppercase font-extrabold tracking-wide ${className}`}
+      className={`px-[24px] py-[6px] rounded-md cursor-pointer hover:brightness-90 active:scale-95 uppercase font-extrabold tracking-wide ${className}`}
       {...rest}
     >
       {children}

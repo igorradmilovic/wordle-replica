@@ -47,13 +47,13 @@ export const Keyboard = () => {
               <div
                 key={letter}
                 className={clsx(
-                  "rounded-md m-[4px] flex h-[42px] w-[32px] sm:h-[50px] sm:w-[45px] lg:h-[60px] lg:w-[45px] items-center justify-center uppercase text-[1rem] sm:text-[1.5rem] font-extrabold cursor-pointer hover:brightness-90 transition-all ease-in delay-250",
+                  "rounded-md m-[4px] flex h-[42px] w-[32px] sm:h-[44px] sm:w-[34px] md:h-[48px] md:w-[38px] lg:h-[52px] lg:w-[42px] items-center justify-center uppercase text-[1rem] sm:text-[1.5rem] font-extrabold cursor-pointer hover:brightness-90 transition-all ease-in delay-250",
                   {
                     "bg-zinc-500": !exact && !partial && !wrong,
                     "bg-zinc-700": wrong,
                     "bg-green-500": exact,
                     "bg-yellow-600": partial && !exact,
-                    "px-4 box-border":
+                    "px-8 box-border":
                       letter === SpecialKeyboardCharatersEnum.ENTER ||
                       letter === SpecialKeyboardCharatersEnum.BACKSPACE,
                   }
@@ -61,11 +61,11 @@ export const Keyboard = () => {
                 onClick={() => handleClick(letter)}
               >
                 {letter === SpecialKeyboardCharatersEnum.ENTER ? (
-                  <div>
+                  <div aria-label="enter-key">
                     <MdKeyboardReturn />
                   </div>
                 ) : letter === SpecialKeyboardCharatersEnum.BACKSPACE ? (
-                  <div>
+                  <div aria-label="backspace-key">
                     <MdBackspace />
                   </div>
                 ) : (

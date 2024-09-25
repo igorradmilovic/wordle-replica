@@ -19,6 +19,7 @@ export const Header = () => {
         <div
           className="text-[1.5rem] cursor-pointer hover:scale-125 transition 500ms"
           onClick={handleHelpClick}
+          data-testid="help-button"
         >
           <MdHelpOutline />
         </div>
@@ -28,6 +29,7 @@ export const Header = () => {
         show={showModal}
         onClose={handleModalClose}
         title={"How To Play"}
+        data-testid="help-modal"
       >
         <HelpModalContent />
       </Modal>

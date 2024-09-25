@@ -19,7 +19,11 @@ export const Modal = ({ className, children, title, show, onClose, ...rest }: Pr
       >
         <header className="text-4xl font-bold rounded-tl-md rounded-tr-md bg-stone-800 p-5 flex justify-between items-center">
           <span>{title}</span>
-          <span className="hover:brightness-75 cursor-pointer" onClick={() => onClose()}>
+          <span
+            aria-label="close-button"
+            className="hover:brightness-75 cursor-pointer"
+            onClick={() => onClose()}
+          >
             <MdClose />
           </span>
         </header>

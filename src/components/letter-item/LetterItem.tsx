@@ -21,9 +21,10 @@ export const LetterItem = ({ isItemGuessedAlready, currentGuess, finalWord }: Pr
           return (
             <div
               key={i}
+              id={`letter-item-${i}`}
               style={style as React.CSSProperties}
               className={clsx(
-                `grid place-items-center border-2 border-zinc-700 w-[50px] h-[50px] sm:w-[50px] sm:h-[50px] lg:w-[80px] lg:h-[80px] text-white uppercase font-bold text-2xl lg:text-3xl transition`,
+                `grid place-items-center border-2 border-zinc-700 w-[50px] h-[50px] sm:w-[56px] sm:h-[56px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] text-white uppercase font-bold text-2xl lg:text-3xl transition`,
                 {
                   "bg-green-500 border-green-500": exact,
                   "bg-yellow-600 border-yellow-600": partial,
