@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { AppDispatch } from "../../store/store";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { getFinalWordSelector } from "../../store/features/wordle/selectors";

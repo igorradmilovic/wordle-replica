@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithRef, PropsWithChildren } from "react";
+import { ComponentPropsWithRef, PropsWithChildren } from "react";
 
 export const Button = ({
   className,

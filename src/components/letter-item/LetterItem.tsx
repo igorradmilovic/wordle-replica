@@ -8,9 +8,10 @@ type Props = {
 
 export const LetterItem = ({ isItemGuessedAlready, currentGuess, finalWord }: Props) => {
   return (
-    <div className="flex gap-1 mb-[4px]">
+    <div className="flex gap-2 mb-[4px]">
       {Array.from({ length: 5 })
         .fill("")
+        // @ts-expect-error
         .map((item, i) => {
           const exact =
             isItemGuessedAlready && currentGuess[i]?.toLowerCase() === finalWord[i]?.toLowerCase();

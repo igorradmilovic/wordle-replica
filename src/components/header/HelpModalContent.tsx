@@ -1,4 +1,3 @@
-import React from "react";
 import { LetterItem } from "../letter-item/LetterItem";
 
 export const HelpModalContent = () => {

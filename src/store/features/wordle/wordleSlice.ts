@@ -13,7 +13,7 @@ const getRandomWord = (): string => words[Math.round(Math.random() * words.lengt
 const initialState: WordleState = {
   allAvailableWords: words,
   word: getRandomWord(),
-  guesses: Array.from({ length: import.meta.env.VITE_NUMBER_OF_TRIES }).map((l) => ""),
+  guesses: Array.from({ length: import.meta.env.VITE_NUMBER_OF_TRIES }).map(() => ""),
   currentGuessIndex: 0,
 };
 export const wordleSlice = createSlice({

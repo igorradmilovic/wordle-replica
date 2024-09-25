@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithRef, PropsWithChildren } from "react";
+import { ComponentPropsWithRef, PropsWithChildren } from "react";
 import { MdClose } from "react-icons/md";
 
 type Props = PropsWithChildren<ComponentPropsWithRef<"div">> & {
