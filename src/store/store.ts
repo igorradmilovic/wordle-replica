@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
 import wordleReducer from "./features/wordle/wordleSlice";
-import logger from "redux-logger";
 
 export const store = configureStore({
   reducer: {
@@ -9,7 +8,6 @@ export const store = configureStore({
   devTools: {
     trace: true,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

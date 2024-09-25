@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { MdHelpOutline } from "react-icons/md";
 import wordleLogo from "../../assets/wordle_img.png";
 import { Modal } from "../modal/Modal";
-import { LetterItem } from "../letter-item/LetterItem";
 import { HelpModalContent } from "./HelpModalContent";
 
 export const Header = () => {

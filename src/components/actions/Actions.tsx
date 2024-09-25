@@ -3,7 +3,6 @@ import { isGameEndSelector } from "../../store/features/wordle/selectors";
 import { AppDispatch } from "../../store/store";
 import { handleClearCurrentGuess, resetGame } from "../../store/features/wordle/wordleSlice";
 import { Button } from "../shared/Button";
-import { useState } from "react";
 
 export const Actions = () => {
   const dispatch: AppDispatch = useAppDispatch();
