@@ -14,7 +14,7 @@ export const Modal = ({ className, children, title, show, onClose, ...rest }: Pr
       onClick={(e) => e.preventDefault()}
     >
       <div
-        className={`h-[300px] sm:h-[350px] w-[90%] sm:w-[700px] bg-zinc-900/90 rounded-md border border-zinc-700 ${className}`}
+        className={`h-[325px] sm:h-[350px] w-[95%] sm:w-[700px] bg-zinc-900/90 rounded-md border border-zinc-700 ${className}`}
         {...rest}
       >
         <header className="text-4xl font-bold rounded-tl-md rounded-tr-md bg-stone-800 p-5 flex justify-between items-center">
