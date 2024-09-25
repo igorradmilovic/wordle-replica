@@ -7,7 +7,6 @@ import {
   handleSetCurrentGuess,
   handleSubmitGuess,
 } from "../../../store/features/wordle/wordleSlice";
-import { SpecialKeyboardCharatersEnum } from "../keyboardEnums";
 
 const mockDispatch = vi.fn();
 

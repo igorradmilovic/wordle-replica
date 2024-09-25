@@ -1,4 +1,3 @@
-import { screen } from "@testing-library/react";
 import { initialWordleState, renderWithProviders } from "../../../utils/tests-utils";
 import { Grid } from "../Grid";
 

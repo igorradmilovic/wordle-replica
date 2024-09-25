@@ -1,4 +1,3 @@
-import { initialWordleState } from "../../../../utils/tests-utils";
 import reducer, {
   handleSubmitGuess,
   resetGame,
